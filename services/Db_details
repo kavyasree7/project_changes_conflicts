@@ -1,0 +1,92 @@
+SqlServer:
+-----------
+host: 52.12.107.45/ 52.12.227.219
+user: sa
+password: pr@m@t!123
+DatabaseName: AdventureWorks2014 / 123-@
+Schema: HumanResources
+
+
+Postgres:
+------------
+host: ec2-54-87-2-36.compute-1.amazonaws.com
+user: postgres
+password: wavemaker
+database: viewsdb
+
+
+Oracle:
+-----------
+host: 52.12.60.149/ 54.189.37.152
+user: saraswathi
+password: saraswathi
+Database: WMSTUDIO
+
+
+Mysql:
+------------
+host: ec2-54-87-2-36.compute-1.amazonaws.com
+user: root
+password: cloudjee123
+Database: classicmodels
+
+
+DB2: (ReadOnly)
+--------------
+host: 52.12.107.45
+user: db2admin1
+password: admin@123
+Database: SAMPLE2
+SchemaFilter: DB2ADMIN1
+Port: 50004
+
+IP:54.153.6.135
+Username:db2inst1
+Password:admin123
+Schema: DB2INST1
+DBName: SAMPLE
+
+//For redirecting
+angular.module('wmProjects').config(function($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist(['**']);
+});
+
+64
+124
+127
+144 - database dropdown
+189 - upload jar ie11
+190 - Connect DB UI ie11
+195
+198 - error icon
+257 - empty headers
+294 - project changes dialog
+300 - db script
+
+
+
+wm-icon wms wms-error-outline ng-hide
+
+form-control app-textbox ng-valid ng-scope ng-not-empty ng-valid-maxlength ng-dirty ng-touched
+
+
+
+CORS Support:
+
+Developers can now allow cross origin site requests(CORS) i.e access resources from different origins in the project. When CORS is enabled in studio certain options are provided in the studio mode   
+
+
+
+
+CORS Support:
+
+Developers can now allow cross origin site requests(CORS) i.e access resources from different origins in the project. CORS is now provided under OWASP tab in security dialog and also in config profiles.
+When CORS is enabled in studio, certain options, such as Allow Credentials, Max Age , Path, origins, are provided in the studio mode. 
+
+Allow Credentials: This option is to allow users to include credentials (including cookies and auth data) to be sent with the requests.
+Max Age: This option is used to set the validity, in secs, of the preflight request response.
+Path: Only the resources with the mentioned path can be exposed
+Origins: Responses can be exposed only to these Origins.
+ 
+
+
